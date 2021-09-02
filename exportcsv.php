@@ -2,6 +2,7 @@
  <?php  
     ini_set('display_errors',1);
     //$conn = oci_connect('test', 'test', '//93.115.136.18:4024/clouddev.world');
+    
     $contor='';
     for($k=0; $k<$argc; $k++)
     {
@@ -16,7 +17,8 @@
         --host : host for oracle log in. Required
         --port: port for oracle log in. Required
         ---service_name: service name for oracle log in. Required
-        --tables: tables name for exporting csv files from oracle';
+        --tables: tables name for exporting csv files from oracle
+        --DB_TYPE: [Oracle | MySQL]';
     }
     else{
             $parm = getopt("", array("username:","pass:","host:","port:","service_name:","tables:"));
