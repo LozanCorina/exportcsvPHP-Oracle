@@ -1,5 +1,6 @@
 <?php  
     ini_set('display_errors',1);
+      //$conn = oci_connect('test', 'test', '//93.115.136.18:4024/clouddev.world');
     $parm = getopt("", array("db_type:","data_type:","username:","pass:","host:","port:","service_name:","tables:","file:"));
     $contor='';
     for($k=0; $k<$argc; $k++)
